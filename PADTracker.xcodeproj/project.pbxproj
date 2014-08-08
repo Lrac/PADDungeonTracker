@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70AC3F241994E4C500DE1802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F231994E4C500DE1802 /* Foundation.framework */; };
+		70AC3F261994E4C500DE1802 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F251994E4C500DE1802 /* CoreGraphics.framework */; };
+		70AC3F281994E4C500DE1802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F271994E4C500DE1802 /* UIKit.framework */; };
+		70AC3F2E1994E4C500DE1802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70AC3F2C1994E4C500DE1802 /* InfoPlist.strings */; };
+		70AC3F301994E4C500DE1802 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AC3F2F1994E4C500DE1802 /* main.m */; };
+		70AC3F341994E4C500DE1802 /* PADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AC3F331994E4C500DE1802 /* PADAppDelegate.m */; };
+		70AC3F361994E4C500DE1802 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AC3F351994E4C500DE1802 /* Images.xcassets */; };
+		70AC3F3D1994E4C600DE1802 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F3C1994E4C600DE1802 /* XCTest.framework */; };
+		70AC3F3E1994E4C600DE1802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F231994E4C500DE1802 /* Foundation.framework */; };
+		70AC3F3F1994E4C600DE1802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F271994E4C500DE1802 /* UIKit.framework */; };
+		70AC3F471994E4C600DE1802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70AC3F451994E4C600DE1802 /* InfoPlist.strings */; };
+		70AC3F491994E4C600DE1802 /* PADTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AC3F481994E4C600DE1802 /* PADTrackerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70AC3F401994E4C600DE1802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70AC3F181994E4C500DE1802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70AC3F1F1994E4C500DE1802;
+			remoteInfo = PADTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70AC3F201994E4C500DE1802 /* PADTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PADTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AC3F231994E4C500DE1802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		70AC3F251994E4C500DE1802 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		70AC3F271994E4C500DE1802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		70AC3F2B1994E4C500DE1802 /* PADTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PADTracker-Info.plist"; sourceTree = "<group>"; };
+		70AC3F2D1994E4C500DE1802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70AC3F2F1994E4C500DE1802 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70AC3F311994E4C500DE1802 /* PADTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PADTracker-Prefix.pch"; sourceTree = "<group>"; };
+		70AC3F321994E4C500DE1802 /* PADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PADAppDelegate.h; sourceTree = "<group>"; };
+		70AC3F331994E4C500DE1802 /* PADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PADAppDelegate.m; sourceTree = "<group>"; };
+		70AC3F351994E4C500DE1802 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70AC3F3B1994E4C600DE1802 /* PADTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PADTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AC3F3C1994E4C600DE1802 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		70AC3F441994E4C600DE1802 /* PADTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PADTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		70AC3F461994E4C600DE1802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70AC3F481994E4C600DE1802 /* PADTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PADTrackerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70AC3F1D1994E4C500DE1802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC3F261994E4C500DE1802 /* CoreGraphics.framework in Frameworks */,
+				70AC3F281994E4C500DE1802 /* UIKit.framework in Frameworks */,
+				70AC3F241994E4C500DE1802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AC3F381994E4C600DE1802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC3F3D1994E4C600DE1802 /* XCTest.framework in Frameworks */,
+				70AC3F3F1994E4C600DE1802 /* UIKit.framework in Frameworks */,
+				70AC3F3E1994E4C600DE1802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70AC3F171994E4C500DE1802 = {
+			isa = PBXGroup;
+			children = (
+				70AC3F291994E4C500DE1802 /* PADTracker */,
+				70AC3F421994E4C600DE1802 /* PADTrackerTests */,
+				70AC3F221994E4C500DE1802 /* Frameworks */,
+				70AC3F211994E4C500DE1802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70AC3F211994E4C500DE1802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70AC3F201994E4C500DE1802 /* PADTracker.app */,
+				70AC3F3B1994E4C600DE1802 /* PADTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70AC3F221994E4C500DE1802 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70AC3F231994E4C500DE1802 /* Foundation.framework */,
+				70AC3F251994E4C500DE1802 /* CoreGraphics.framework */,
+				70AC3F271994E4C500DE1802 /* UIKit.framework */,
+				70AC3F3C1994E4C600DE1802 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70AC3F291994E4C500DE1802 /* PADTracker */ = {
+			isa = PBXGroup;
+			children = (
+				70AC3F321994E4C500DE1802 /* PADAppDelegate.h */,
+				70AC3F331994E4C500DE1802 /* PADAppDelegate.m */,
+				70AC3F351994E4C500DE1802 /* Images.xcassets */,
+				70AC3F2A1994E4C500DE1802 /* Supporting Files */,
+			);
+			path = PADTracker;
+			sourceTree = "<group>";
+		};
+		70AC3F2A1994E4C500DE1802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70AC3F2B1994E4C500DE1802 /* PADTracker-Info.plist */,
+				70AC3F2C1994E4C500DE1802 /* InfoPlist.strings */,
+				70AC3F2F1994E4C500DE1802 /* main.m */,
+				70AC3F311994E4C500DE1802 /* PADTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70AC3F421994E4C600DE1802 /* PADTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				70AC3F481994E4C600DE1802 /* PADTrackerTests.m */,
+				70AC3F431994E4C600DE1802 /* Supporting Files */,
+			);
+			path = PADTrackerTests;
+			sourceTree = "<group>";
+		};
+		70AC3F431994E4C600DE1802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70AC3F441994E4C600DE1802 /* PADTrackerTests-Info.plist */,
+				70AC3F451994E4C600DE1802 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70AC3F1F1994E4C500DE1802 /* PADTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AC3F4C1994E4C600DE1802 /* Build configuration list for PBXNativeTarget "PADTracker" */;
+			buildPhases = (
+				70AC3F1C1994E4C500DE1802 /* Sources */,
+				70AC3F1D1994E4C500DE1802 /* Frameworks */,
+				70AC3F1E1994E4C500DE1802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PADTracker;
+			productName = PADTracker;
+			productReference = 70AC3F201994E4C500DE1802 /* PADTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70AC3F3A1994E4C600DE1802 /* PADTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AC3F4F1994E4C600DE1802 /* Build configuration list for PBXNativeTarget "PADTrackerTests" */;
+			buildPhases = (
+				70AC3F371994E4C600DE1802 /* Sources */,
+				70AC3F381994E4C600DE1802 /* Frameworks */,
+				70AC3F391994E4C600DE1802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70AC3F411994E4C600DE1802 /* PBXTargetDependency */,
+			);
+			name = PADTrackerTests;
+			productName = PADTrackerTests;
+			productReference = 70AC3F3B1994E4C600DE1802 /* PADTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70AC3F181994E4C500DE1802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PAD;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					70AC3F3A1994E4C600DE1802 = {
+						TestTargetID = 70AC3F1F1994E4C500DE1802;
+					};
+				};
+			};
+			buildConfigurationList = 70AC3F1B1994E4C500DE1802 /* Build configuration list for PBXProject "PADTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70AC3F171994E4C500DE1802;
+			productRefGroup = 70AC3F211994E4C500DE1802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70AC3F1F1994E4C500DE1802 /* PADTracker */,
+				70AC3F3A1994E4C600DE1802 /* PADTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70AC3F1E1994E4C500DE1802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC3F2E1994E4C500DE1802 /* InfoPlist.strings in Resources */,
+				70AC3F361994E4C500DE1802 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AC3F391994E4C600DE1802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC3F471994E4C600DE1802 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70AC3F1C1994E4C500DE1802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC3F341994E4C500DE1802 /* PADAppDelegate.m in Sources */,
+				70AC3F301994E4C500DE1802 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AC3F371994E4C600DE1802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AC3F491994E4C600DE1802 /* PADTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70AC3F411994E4C600DE1802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70AC3F1F1994E4C500DE1802 /* PADTracker */;
+			targetProxy = 70AC3F401994E4C600DE1802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70AC3F2C1994E4C500DE1802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70AC3F2D1994E4C500DE1802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		70AC3F451994E4C600DE1802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70AC3F461994E4C600DE1802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70AC3F4A1994E4C600DE1802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		70AC3F4B1994E4C600DE1802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70AC3F4D1994E4C600DE1802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PADTracker/PADTracker-Prefix.pch";
+				INFOPLIST_FILE = "PADTracker/PADTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		70AC3F4E1994E4C600DE1802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PADTracker/PADTracker-Prefix.pch";
+				INFOPLIST_FILE = "PADTracker/PADTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		70AC3F501994E4C600DE1802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PADTracker.app/PADTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PADTracker/PADTracker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PADTrackerTests/PADTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		70AC3F511994E4C600DE1802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PADTracker.app/PADTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PADTracker/PADTracker-Prefix.pch";
+				INFOPLIST_FILE = "PADTrackerTests/PADTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70AC3F1B1994E4C500DE1802 /* Build configuration list for PBXProject "PADTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AC3F4A1994E4C600DE1802 /* Debug */,
+				70AC3F4B1994E4C600DE1802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70AC3F4C1994E4C600DE1802 /* Build configuration list for PBXNativeTarget "PADTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AC3F4D1994E4C600DE1802 /* Debug */,
+				70AC3F4E1994E4C600DE1802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70AC3F4F1994E4C600DE1802 /* Build configuration list for PBXNativeTarget "PADTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AC3F501994E4C600DE1802 /* Debug */,
+				70AC3F511994E4C600DE1802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70AC3F181994E4C500DE1802 /* Project object */;
+}
