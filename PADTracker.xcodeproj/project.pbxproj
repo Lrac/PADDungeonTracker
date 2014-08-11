@@ -31,7 +31,7 @@
 		70E7CD7119985CF800F19D35 /* clock34.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E7CD6F19985CF800F19D35 /* clock34.png */; };
 		70E7CD7219985CF800F19D35 /* clock35.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E7CD7019985CF800F19D35 /* clock35.png */; };
 		70E7CD7319985DCE00F19D35 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 70A025981998577D00070741 /* Main.storyboard */; };
-		70E7CD7619985E4100F19D35 /* PADDungeonTrackerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E7CD7519985E4100F19D35 /* PADDungeonTrackerTableViewController.m */; };
+		70E7CD78199881A300F19D35 /* PADDungeonTrackerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E7CD77199881A300F19D35 /* PADDungeonTrackerTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		70AC3F481994E4C600DE1802 /* PADTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PADTrackerTests.m; sourceTree = "<group>"; };
 		70E7CD6F19985CF800F19D35 /* clock34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock34.png; sourceTree = "<group>"; };
 		70E7CD7019985CF800F19D35 /* clock35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock35.png; sourceTree = "<group>"; };
-		70E7CD7519985E4100F19D35 /* PADDungeonTrackerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDungeonTrackerTableViewController.m; path = "../../PADTracker copy/PADTracker/PADDungeonTrackerTableViewController.m"; sourceTree = "<group>"; };
+		70E7CD77199881A300F19D35 /* PADDungeonTrackerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADDungeonTrackerTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				70A7B68219960DE800F877E3 /* PADGroupSettingsViewController.h */,
 				70A7B68319960DE800F877E3 /* PADGroupSettingsViewController.m */,
 				70A7B68519960EB200F877E3 /* PADDungeonTrackerTableViewController.h */,
-				70E7CD7519985E4100F19D35 /* PADDungeonTrackerTableViewController.m */,
+				70E7CD77199881A300F19D35 /* PADDungeonTrackerTableViewController.m */,
 				70A7B688199614DD00F877E3 /* PADDungeonEvent.h */,
 				70A7B689199614DD00F877E3 /* PADDungeonEvent.m */,
 				70AC3F351994E4C500DE1802 /* Images.xcassets */,
@@ -309,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E7CD7619985E4100F19D35 /* PADDungeonTrackerTableViewController.m in Sources */,
 				70E7CD7319985DCE00F19D35 /* Main.storyboard in Sources */,
 				70AC3F341994E4C500DE1802 /* PADAppDelegate.m in Sources */,
 				709ABD551996B52600D790AF /* TFHppleElement.m in Sources */,
@@ -318,6 +317,7 @@
 				70AC3F301994E4C500DE1802 /* main.m in Sources */,
 				70A7B68419960DE800F877E3 /* PADGroupSettingsViewController.m in Sources */,
 				70A7B68A199614DD00F877E3 /* PADDungeonEvent.m in Sources */,
+				70E7CD78199881A300F19D35 /* PADDungeonTrackerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
