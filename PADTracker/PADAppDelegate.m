@@ -6,17 +6,39 @@
 //
 //
 
+/*
+ <div>Icons made by Freepik, Linh Pham from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div>
+ */
+
 #import "PADAppDelegate.h"
+#import "PADDungeonTrackerTableViewController.h"
 
 @implementation PADAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    NSDate *fetchStart = [NSDate date];
+    
+    PADDungeonTrackerTableViewController *tableViewController = [[PADDungeonTrackerTableViewController alloc] init];
+    
+    
+    [tableViewController fetchNewDataWithCompletionHandler:^(UIBackgroundFetchResult result){
+        completionHandler(result);
+        NSDate *fetchEnd = [NSDate date];
+        NSTimeInterval timeElapsed = [fetchEnd timeIntervalSinceDate:fetchStart];
+        NSLog(@"Background Fetch Duration: %f seconds", timeElapsed);
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

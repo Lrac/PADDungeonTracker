@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		709ABD541996B52600D790AF /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 709ABD4F1996B52600D790AF /* TFHpple.m */; };
+		709ABD551996B52600D790AF /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 709ABD511996B52600D790AF /* TFHppleElement.m */; };
+		709ABD561996B52600D790AF /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 709ABD531996B52600D790AF /* XPathQuery.m */; };
+		709ABD581996B75400D790AF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 709ABD571996B75400D790AF /* libxml2.dylib */; };
+		709B37A419980B060053A7DC /* clock34.svg in Resources */ = {isa = PBXBuildFile; fileRef = 709B37A219980B060053A7DC /* clock34.svg */; };
+		709B37A519980B060053A7DC /* clock35.svg in Resources */ = {isa = PBXBuildFile; fileRef = 709B37A319980B060053A7DC /* clock35.svg */; };
+		70A025991998577D00070741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70A025981998577D00070741 /* Main.storyboard */; };
+		70A7B68419960DE800F877E3 /* PADGroupSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A7B68319960DE800F877E3 /* PADGroupSettingsViewController.m */; };
+		70A7B68A199614DD00F877E3 /* PADDungeonEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A7B689199614DD00F877E3 /* PADDungeonEvent.m */; };
 		70AC3F241994E4C500DE1802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F231994E4C500DE1802 /* Foundation.framework */; };
 		70AC3F261994E4C500DE1802 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F251994E4C500DE1802 /* CoreGraphics.framework */; };
 		70AC3F281994E4C500DE1802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F271994E4C500DE1802 /* UIKit.framework */; };
@@ -19,6 +28,10 @@
 		70AC3F3F1994E4C600DE1802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AC3F271994E4C500DE1802 /* UIKit.framework */; };
 		70AC3F471994E4C600DE1802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70AC3F451994E4C600DE1802 /* InfoPlist.strings */; };
 		70AC3F491994E4C600DE1802 /* PADTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AC3F481994E4C600DE1802 /* PADTrackerTests.m */; };
+		70E7CD7119985CF800F19D35 /* clock34.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E7CD6F19985CF800F19D35 /* clock34.png */; };
+		70E7CD7219985CF800F19D35 /* clock35.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E7CD7019985CF800F19D35 /* clock35.png */; };
+		70E7CD7319985DCE00F19D35 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 70A025981998577D00070741 /* Main.storyboard */; };
+		70E7CD7619985E4100F19D35 /* PADDungeonTrackerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E7CD7519985E4100F19D35 /* PADDungeonTrackerTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		709ABD4E1996B52600D790AF /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		709ABD4F1996B52600D790AF /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		709ABD501996B52600D790AF /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		709ABD511996B52600D790AF /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		709ABD521996B52600D790AF /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		709ABD531996B52600D790AF /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		709ABD571996B75400D790AF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		709B37A219980B060053A7DC /* clock34.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = clock34.svg; sourceTree = "<group>"; };
+		709B37A319980B060053A7DC /* clock35.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = clock35.svg; sourceTree = "<group>"; };
+		70A025981998577D00070741 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		70A7B68219960DE800F877E3 /* PADGroupSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADGroupSettingsViewController.h; sourceTree = "<group>"; };
+		70A7B68319960DE800F877E3 /* PADGroupSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADGroupSettingsViewController.m; sourceTree = "<group>"; };
+		70A7B68519960EB200F877E3 /* PADDungeonTrackerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADDungeonTrackerTableViewController.h; sourceTree = "<group>"; };
+		70A7B688199614DD00F877E3 /* PADDungeonEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADDungeonEvent.h; sourceTree = "<group>"; };
+		70A7B689199614DD00F877E3 /* PADDungeonEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADDungeonEvent.m; sourceTree = "<group>"; };
 		70AC3F201994E4C500DE1802 /* PADTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PADTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AC3F231994E4C500DE1802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70AC3F251994E4C500DE1802 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +76,9 @@
 		70AC3F441994E4C600DE1802 /* PADTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PADTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		70AC3F461994E4C600DE1802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70AC3F481994E4C600DE1802 /* PADTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PADTrackerTests.m; sourceTree = "<group>"; };
+		70E7CD6F19985CF800F19D35 /* clock34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock34.png; sourceTree = "<group>"; };
+		70E7CD7019985CF800F19D35 /* clock35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock35.png; sourceTree = "<group>"; };
+		70E7CD7519985E4100F19D35 /* PADDungeonTrackerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PADDungeonTrackerTableViewController.m; path = "../../PADTracker copy/PADTracker/PADDungeonTrackerTableViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709ABD581996B75400D790AF /* libxml2.dylib in Frameworks */,
 				70AC3F261994E4C500DE1802 /* CoreGraphics.framework in Frameworks */,
 				70AC3F281994E4C500DE1802 /* UIKit.framework in Frameworks */,
 				70AC3F241994E4C500DE1802 /* Foundation.framework in Frameworks */,
@@ -74,6 +106,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		709ABD4D1996B4DB00D790AF /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				709ABD4E1996B52600D790AF /* TFHpple.h */,
+				709ABD4F1996B52600D790AF /* TFHpple.m */,
+				709ABD501996B52600D790AF /* TFHppleElement.h */,
+				709ABD511996B52600D790AF /* TFHppleElement.m */,
+				709ABD521996B52600D790AF /* XPathQuery.h */,
+				709ABD531996B52600D790AF /* XPathQuery.m */,
+			);
+			name = hpple;
+			sourceTree = "<group>";
+		};
 		70AC3F171994E4C500DE1802 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +141,7 @@
 		70AC3F221994E4C500DE1802 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				709ABD571996B75400D790AF /* libxml2.dylib */,
 				70AC3F231994E4C500DE1802 /* Foundation.framework */,
 				70AC3F251994E4C500DE1802 /* CoreGraphics.framework */,
 				70AC3F271994E4C500DE1802 /* UIKit.framework */,
@@ -107,8 +153,15 @@
 		70AC3F291994E4C500DE1802 /* PADTracker */ = {
 			isa = PBXGroup;
 			children = (
+				709ABD4D1996B4DB00D790AF /* hpple */,
 				70AC3F321994E4C500DE1802 /* PADAppDelegate.h */,
 				70AC3F331994E4C500DE1802 /* PADAppDelegate.m */,
+				70A7B68219960DE800F877E3 /* PADGroupSettingsViewController.h */,
+				70A7B68319960DE800F877E3 /* PADGroupSettingsViewController.m */,
+				70A7B68519960EB200F877E3 /* PADDungeonTrackerTableViewController.h */,
+				70E7CD7519985E4100F19D35 /* PADDungeonTrackerTableViewController.m */,
+				70A7B688199614DD00F877E3 /* PADDungeonEvent.h */,
+				70A7B689199614DD00F877E3 /* PADDungeonEvent.m */,
 				70AC3F351994E4C500DE1802 /* Images.xcassets */,
 				70AC3F2A1994E4C500DE1802 /* Supporting Files */,
 			);
@@ -118,6 +171,11 @@
 		70AC3F2A1994E4C500DE1802 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70A025981998577D00070741 /* Main.storyboard */,
+				70E7CD6F19985CF800F19D35 /* clock34.png */,
+				70E7CD7019985CF800F19D35 /* clock35.png */,
+				709B37A219980B060053A7DC /* clock34.svg */,
+				709B37A319980B060053A7DC /* clock35.svg */,
 				70AC3F2B1994E4C500DE1802 /* PADTracker-Info.plist */,
 				70AC3F2C1994E4C500DE1802 /* InfoPlist.strings */,
 				70AC3F2F1994E4C500DE1802 /* main.m */,
@@ -191,6 +249,13 @@
 				CLASSPREFIX = PAD;
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					70AC3F1F1994E4C500DE1802 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					70AC3F3A1994E4C600DE1802 = {
 						TestTargetID = 70AC3F1F1994E4C500DE1802;
 					};
@@ -219,7 +284,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70A025991998577D00070741 /* Main.storyboard in Resources */,
+				70E7CD7119985CF800F19D35 /* clock34.png in Resources */,
+				709B37A419980B060053A7DC /* clock34.svg in Resources */,
+				709B37A519980B060053A7DC /* clock35.svg in Resources */,
 				70AC3F2E1994E4C500DE1802 /* InfoPlist.strings in Resources */,
+				70E7CD7219985CF800F19D35 /* clock35.png in Resources */,
 				70AC3F361994E4C500DE1802 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E7CD7619985E4100F19D35 /* PADDungeonTrackerTableViewController.m in Sources */,
+				70E7CD7319985DCE00F19D35 /* Main.storyboard in Sources */,
 				70AC3F341994E4C500DE1802 /* PADAppDelegate.m in Sources */,
+				709ABD551996B52600D790AF /* TFHppleElement.m in Sources */,
+				709ABD561996B52600D790AF /* XPathQuery.m in Sources */,
+				709ABD541996B52600D790AF /* TFHpple.m in Sources */,
 				70AC3F301994E4C500DE1802 /* main.m in Sources */,
+				70A7B68419960DE800F877E3 /* PADGroupSettingsViewController.m in Sources */,
+				70A7B68A199614DD00F877E3 /* PADDungeonEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +436,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PADTracker/PADTracker-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "PADTracker/PADTracker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -372,6 +450,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PADTracker/PADTracker-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "PADTracker/PADTracker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -437,6 +516,7 @@
 				70AC3F4E1994E4C600DE1802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70AC3F4F1994E4C600DE1802 /* Build configuration list for PBXNativeTarget "PADTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +525,7 @@
 				70AC3F511994E4C600DE1802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
