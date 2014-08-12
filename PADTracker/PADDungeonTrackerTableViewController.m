@@ -8,13 +8,17 @@
 
 #import "PADDungeonTrackerTableViewController.h"
 #import "PADGroupSettingsViewController.h"
+#import "PADDungeonDetailsViewController.h"
 #import "PADDungeonEvent.h"
 #import "TFHpple.h"
 
 @interface PADDungeonTrackerTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *detail;
+- (IBAction)clockButton:(UIButton *)sender;
 
 @property NSMutableArray *dungeonEvents;
+@property PADDungeonEvent *eventToSend;
+@property NSString *utcDifference;
 
 @end
 
@@ -25,7 +29,7 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     self.starter = [userDefaults integerForKey:@"key1"];
     self.group = [userDefaults integerForKey:@"key2"];
-
+    self.utcDifference = [userDefaults objectForKey:@"key3"];
     
     [self updateDungeons];
     [self.tableView reloadData];
@@ -54,6 +58,7 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     self.starter = [userDefaults integerForKey:@"key1"];
     self.group = [userDefaults integerForKey:@"key2"];
+    self.utcDifference = [userDefaults objectForKey:@"key3"];
     self.dungeonEvents = [[NSMutableArray alloc] init];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
@@ -76,8 +81,9 @@
 
 - (void)updateDungeons {
     //Create the request
+    NSString *urlString = [NSString stringWithFormat:@"http://puzzledragonx.com/?utc=%@",self.utcDifference];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL
-    URLWithString:@"http://puzzledragonx.com"]];
+    URLWithString:[NSString stringWithFormat:urlString]]];
     
     //Create url connection and fire request
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -158,6 +164,9 @@
             dungeonEvent2.dungeonTime = [[timeElement firstChild] content];
             j++;
             
+            dungeonEvent2.clockClicked = NO;
+            dungeonEvent2.clockImage = [UIImage imageNamed:@"clock34.png"];
+            
             [newDungeonSection addObject:dungeonEvent2];
 
             
@@ -173,7 +182,8 @@
             j++;
         }
         
-
+        dungeonEvent.clockClicked = NO;
+        dungeonEvent.clockImage = [UIImage imageNamed:@"clock34.png"];
         [newDungeonSection addObject:dungeonEvent];
         
     }
@@ -196,8 +206,8 @@
         if ([elementChild hasChildren]){
             PADDungeonEvent *dungeonEvent2 = [[PADDungeonEvent alloc] init];
             
-            TFHppleElement *elementChild1 = [[element firstChildWithClassName:@"monstericon1"] firstChild];
-            TFHppleElement *elementChild2 = [elementChild firstChild];
+            TFHppleElement *elementChild2 = [[element firstChildWithClassName:@"monstericon1"] firstChild];
+            TFHppleElement *elementChild1 = [elementChild firstChild];
             
             dungeonEvent.dungeonLink = [elementChild1 objectForKey:@"href"];
             dungeonEvent2.dungeonLink = [elementChild2 objectForKey:@"href"];
@@ -234,7 +244,6 @@
             j++;
         }
         
-
         [newDungeonSection2 addObject:dungeonEvent];
         
     }
@@ -281,12 +290,22 @@
     NSArray *dungeonSection = [self.dungeonEvents objectAtIndex:indexPath.section];
     PADDungeonEvent *dungeonEvent = [dungeonSection objectAtIndex:indexPath.row];
     
-
     
-    label = (UILabel *)[cell viewWithTag:1];
+
+        UIButton *clockButton = (UIButton *)[cell viewWithTag:1];
+    
+    if (indexPath.section == 0){
+        [clockButton setTitle:[NSString stringWithFormat:@"%ld",(long)indexPath.row] forState:UIControlStateNormal];
+        [clockButton setImage:dungeonEvent.clockImage forState:UIControlStateNormal];
+    
+    } else{
+        [clockButton setTitle:@" " forState:UIControlStateNormal];
+    }
+    
+    label = (UILabel *)[cell viewWithTag:100];
     label.text = dungeonEvent.dungeonTime;
     
-    label = (UILabel *)[cell viewWithTag:2];
+    label = (UILabel *)[cell viewWithTag:200];
     label.text = dungeonEvent.dungeonName;
     
     
@@ -341,17 +360,53 @@
 }
 */
 
-/*
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0){
+        self.eventToSend = [[self.dungeonEvents objectAtIndex:0] objectAtIndex:indexPath.row];
+        [self performSegueWithIdentifier:@"detailSegue" sender:self.eventToSend];
+        
+    }
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue identifier] isEqualToString:@"detailSegue"]){
+        PADDungeonDetailsViewController *vc = [segue destinationViewController];
+        
+        [vc setDungeonEvent:self.eventToSend];
+        
+        
+        
+        
+    }
 }
-*/
 
 
 
+- (IBAction)clockButton:(UIButton *)sender {
+    
+    if (![sender.currentTitle isEqualToString:@" "]){
+    
+        NSUInteger number = [sender.currentTitle integerValue];
+        NSArray *dungeonSection = [self.dungeonEvents objectAtIndex:0];
+        PADDungeonEvent *touchDungeon = [dungeonSection objectAtIndex:number];
+        if (touchDungeon.clockClicked == NO) {
+            touchDungeon.clockImage = [UIImage imageNamed:@"clock37.png"];
+            touchDungeon.clockClicked = YES;
+        } else {
+            touchDungeon.clockImage = [UIImage imageNamed:@"clock34.png"];
+            touchDungeon.clockClicked = NO;
+        }
+    [self.tableView reloadData];
+    }
+    
+}
 @end

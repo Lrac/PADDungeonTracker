@@ -13,7 +13,8 @@
 @property NSString *dungeonName;
 @property NSString *dungeonTime;
 @property NSString *dungeonLink;
-@property BOOL completed;
+@property BOOL clockClicked;
+@property UIImage *clockImage;
 @property (readonly) NSDate *creationDate;
 
 @end
