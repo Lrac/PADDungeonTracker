@@ -12,9 +12,14 @@
 
 @property NSString *dungeonName;
 @property NSString *dungeonTime;
+@property NSDate *dungeonDate;
 @property NSString *dungeonLink;
+@property NSString *dungeonImageURL;
+@property UIImage *dungeonImage;
 @property BOOL clockClicked;
 @property UIImage *clockImage;
+@property NSDate *alarmDate;
+@property UILocalNotification *alarmNotification;
 @property (readonly) NSDate *creationDate;
 
 @end

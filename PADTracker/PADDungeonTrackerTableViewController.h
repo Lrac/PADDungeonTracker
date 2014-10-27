@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PADDungeonTrackerTableViewController : UITableViewController<NSURLConnectionDataDelegate>
+@interface PADDungeonTrackerTableViewController : UITableViewController<NSURLConnectionDataDelegate, UITableViewDelegate, UITableViewDataSource, UIPickerViewDataSource, UIPickerViewDelegate>
 {
     NSMutableData *_responseData;
 }

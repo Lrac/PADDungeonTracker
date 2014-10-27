@@ -12,5 +12,7 @@
 @interface PADDungeonDetailsViewController : UIViewController
 
 @property PADDungeonEvent *dungeonEvent;
+@property (strong, nonatomic) IBOutlet UILabel *dungeonTime;
+@property (strong, nonatomic) IBOutlet UILabel *timeTillStart;
 
 @end
